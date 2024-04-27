@@ -1,0 +1,96 @@
+/* Reset default margin and padding for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for the calculator parent container */
+.cal-parent {
+    width: 100vw;
+    height: 100vh;
+    background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    min-height: 400px;
+}
+
+/* Styles for the calculator body */
+.calculator-body {
+    width: 28rem;
+    height: 34rem;
+    background-color: #475569;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the input/output display area */
+.display-IO {
+    width: 24rem;
+    height: 4rem;
+    background-color: #CBD5E1;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* Styles for the text inside the display area */
+.display-IO-text {
+    margin-right: 15px;
+    font-size: 48px;
+}
+
+/* Styles for the container of input buttons */
+.input-btn-parent {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+/* Styles for the container of each row of input buttons */
+.input-buttons-parent {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styles for each input button */
+.num {
+    border: 2px solid black;
+    width: 5rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s, transform .3s;
+}
+
+/* Hover effect for input buttons */
+.num:hover {
+    background-color: #F1F5F9;
+}
+
+/* Active effect for input buttons */
+.num:active {
+    box-shadow: 0px 4px 8px rgba(30, 144, 255, 0.3);
+    transform: scale(0.86);
+    background-color: rgb(255, 255, 255);
+}
