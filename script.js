@@ -75,7 +75,7 @@ function calculate() {
         break;
       case "%":
         result = parseInt(num1.join("")) / parseInt(num2.join(""));
-        result=result.toFixed(0);
+        result=result.toFixed(1);
         break;
       default:
         console.log("Invalid operation");
